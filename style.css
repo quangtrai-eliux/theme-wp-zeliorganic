@@ -1,0 +1,63 @@
+/*!
+Theme Name: ZeliOrganic
+Theme URI: 
+Author: Zeliux
+Author URI: 
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: zeliorganic
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, organic
+
+*/
+
+
+
+/* CUSTOM CSS */
+.header__menu #primary-menu {
+	justify-content: space-around;
+}
+.header__menu #primary-menu > ul {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+}
+.header__menu ul li .header__menu__dropdown {
+	flex-direction: column;
+	width: max-content;
+}
+.main-navigation ul ul a {
+	width: auto;
+}
+.blog__item__text p {
+	max-height: 78px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.blog__item__pic img {
+    height: 208px;
+    object-fit: cover;
+    object-position: center;
+}
+.blog__details__text img {
+    margin-bottom: 30px;
+    height: auto;
+    object-fit: contain;
+    object-position: top;
+}
+.set-bg {
+    background-position: center;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+	.header__menu ul li {
+		margin-right: 10px;
+	}
+	.header__menu #primary-menu > ul {
+		justify-content: space-between;
+	}
+}
