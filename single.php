@@ -8,9 +8,7 @@
  */
 
 get_header();
-?>
-<?php while ( have_posts() ) : the_post(); 
-if(get_post_type() == "post" ){
+	while ( have_posts() ) : the_post(); 
 ?>
     <!-- Blog Details Hero Begin -->
     <section class="blog-details-hero set-bg" data-setbg="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -35,14 +33,10 @@ if(get_post_type() == "post" ){
 <section class="blog-details spad">
 	<div class="container">
 		<div class="row"> 
-<?php 
-	get_sidebar();
-?>
+			<?php get_sidebar(); ?>
 			<main id="primary" class="site-main col-lg-8 col-md-7 order-md-1 order-1">
 				<div class="blog__details__text">
-				<?php
-					the_content();
-				?>
+				<?php the_content(); ?>
 				</div>
 				<div class="blog__details__content">
 					<div class="row">
@@ -79,8 +73,5 @@ if(get_post_type() == "post" ){
 	</div> 
 </section>
 <?php
-}
-	endwhile; // End of the loop.
-?>
-<?php
+endwhile; // End of the loop.
 get_footer();

@@ -12,7 +12,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<aside id="secondary" class="widget-area col-lg-4 col-md-5 order-md-1 order-2">
+<aside id="secondary" class="widget-area col-lg-4 col-md-5">
 	<div class="blog__sidebar">
 		<div class="blog__sidebar__search">
 			<form action="#">
