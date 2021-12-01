@@ -1,3 +1,11 @@
+<?php
+/*
+ * Template Name: Contact
+ * Description: The template for displaying the homepage
+ */
+ ?>
+ 
+ 
  <!-- Breadcrumb Section Begin -->
  <section class="breadcrumb-section set-bg" data-setbg="<?php bloginfo('template_url'); ?>/assets/img/breadcrumb.jpg">
         <div class="container">

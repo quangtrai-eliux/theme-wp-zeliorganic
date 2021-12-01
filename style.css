@@ -52,6 +52,31 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .set-bg {
     background-position: center;
 }
+.product {
+	padding: 0;
+}
+/* .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    float: unset;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 22%;
+    margin-left: 0;
+	box-sizing: border-box;
+	margin-bottom: 2rem;
+}
+.woocommerce .products ul::after, .woocommerce .products ul::before, .woocommerce ul.products::after, .woocommerce ul.products::before {
+    content: unset;
+    display: unset;
+}
+.products.columns-4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+
 @media only screen and (min-width: 992px) and (max-width: 1199px)
 {
 	.header__menu ul li {
