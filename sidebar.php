@@ -21,7 +21,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 			</form>
 		</div>
 		<div class="blog__sidebar__item">
-			<h4>Categories</h4>
+			<h4>Các thể loại</h4>
 			<ul>
 				<li><a href="#">All</a></li>
 				<li><a href="#">Beauty (20)</a></li>
@@ -31,39 +31,34 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 			</ul>
 		</div>
 		<div class="blog__sidebar__item">
-			<h4>Recent News</h4>
+			<h4>Tin tức gần đây</h4>
 			<div class="blog__sidebar__recent">
-				<a href="#" class="blog__sidebar__recent__item">
+			<?php 
+				$args = array(
+					'post_status' => 'publish',
+					'orderby'=> 'date',
+    				'order'=> 'DESC', 
+					'showposts' => 3, 
+				);
+			?>
+			<?php $getposts = new WP_query($args); ?>
+			<?php global $wp_query; $wp_query->in_the_loop = true; ?>
+			<?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+
+				<a href="<?php the_permalink(); ?>" class="blog__sidebar__recent__item">
 					<div class="blog__sidebar__recent__item__pic">
-						<img src="<?php bloginfo('template_url'); ?>/assets/img/blog/sidebar/sr-1.jpg" alt="">
+						<?php the_post_thumbnail(); ?>
 					</div>
 					<div class="blog__sidebar__recent__item__text">
-						<h6>09 Kinds Of Vegetables<br> Protect The Liver</h6>
-						<span>MAR 05, 2019</span>
+						<h6><?php the_title(); ?></h6>
+						<span><?php echo get_the_date('M d, Y'); ?></span>
 					</div>
 				</a>
-				<a href="#" class="blog__sidebar__recent__item">
-					<div class="blog__sidebar__recent__item__pic">
-						<img src="<?php bloginfo('template_url'); ?>/assets/img/blog/sidebar/sr-2.jpg" alt="">
-					</div>
-					<div class="blog__sidebar__recent__item__text">
-						<h6>Tips You To Balance<br> Nutrition Meal Day</h6>
-						<span>MAR 05, 2019</span>
-					</div>
-				</a>
-				<a href="#" class="blog__sidebar__recent__item">
-					<div class="blog__sidebar__recent__item__pic">
-						<img src="<?php bloginfo('template_url'); ?>/assets/img/blog/sidebar/sr-3.jpg" alt="">
-					</div>
-					<div class="blog__sidebar__recent__item__text">
-						<h6>4 Principles Help You Lose <br>Weight With Vegetables</h6>
-						<span>MAR 05, 2019</span>
-					</div>
-				</a>
+			<?php endwhile; wp_reset_postdata(); ?>				
 			</div>
 		</div>
 		<div class="blog__sidebar__item">
-			<h4>Search By</h4>
+			<h4>Tìm kiếm với</h4>
 			<div class="blog__sidebar__item__tags">
 				<a href="#">Apple</a>
 				<a href="#">Beauty</a>

@@ -22,9 +22,9 @@
 						?>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello@colorlib.com</li>
+                            <li>Địa chỉ: Kiệt 29 Lê Qúy Đôn, Huế</li>
+                            <li>Di động: 039 370 6061</li>
+                            <li>Email: ogani@zeliux.com</li>
                         </ul>
                     </div>
                 </div>
@@ -51,11 +51,11 @@
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="footer__widget">
-                        <h6>Join Our Newsletter Now</h6>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <h6>Đăng kí nhận bản tin</h6>
+                        <p>Nhận thông tin ưu đãi sớm nhất thông qua E-mail.</p>
                         <form action="#">
-                            <input type="text" placeholder="Enter your mail">
-                            <button type="submit" class="site-btn">Subscribe</button>
+                            <input type="text" placeholder="Nhập email của bạn">
+                            <button type="submit" class="site-btn">Đăng ký</button>
                         </form>
                         <div class="footer__widget__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
