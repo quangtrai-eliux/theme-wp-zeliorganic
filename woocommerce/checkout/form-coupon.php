@@ -22,10 +22,15 @@ if ( ! wc_coupons_enabled() ) { // @codingStandardsIgnoreLine.
 }
 
 ?>
-<div class="woocommerce-form-coupon-toggle">
-	<?php wc_print_notice( apply_filters( 'woocommerce_checkout_coupon_message', esc_html__( 'Have a coupon?', 'woocommerce' ) . ' <a href="#" class="showcoupon">' . esc_html__( 'Click here to enter your code', 'woocommerce' ) . '</a>' ), 'notice' ); ?>
-</div>
-
+    <!-- Checkout Section Begin -->
+    <section class="checkout spad">
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-12">
+                    <h6><span class="icon_tag_alt"></span> <?php wc_print_notice( apply_filters( 'woocommerce_checkout_coupon_message', esc_html__( 'Bạn có phiếu giảm giá?', 'woocommerce' ) . ' <a href="#" class="showcoupon">' . esc_html__( 'Ấn vào đây', 'woocommerce' ) . '</a> để nhập mã của bạn' ), 'notice' ); ?>
+                    </h6>
+                </div>
+            </div>
 <form class="checkout_coupon woocommerce-form-coupon" method="post" style="display:none">
 
 	<p><?php esc_html_e( 'If you have a coupon code, please apply it below.', 'woocommerce' ); ?></p>

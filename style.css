@@ -111,10 +111,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         background: #7fad39;
         color: #ffffff;
 }
-.product__pagination .page-numbers li a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.blog__pagination, .product__pagination {
+    display: flex;
 }
 .product__pagination a:last-child, .blog__pagination a:last-child {
     margin-right: 16px;
@@ -138,6 +136,25 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 }
 .woocommerce ul.products.columns-3 {
     margin: 0 15px;
+}
+.product__pagination .page-numbers {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.woocommerce span.onsale {
+    background-color: #dd2222 !important;
+}
+
+.shoping__cart__table table tbody tr td.shoping__cart__item img {
+    width: 100px;
+}
+.shoping__cart__table a{
+    color: black !important;
+}
+.shoping__cart__table a:hover {
+    color: black !important;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px)
 {

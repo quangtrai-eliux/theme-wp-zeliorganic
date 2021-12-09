@@ -24,7 +24,6 @@ get_header();
 			if($slug == 'contact' || $slug == 'blog'){
 				get_template_part( $slug ); 
 			}else {
-				echo "Else";
 				get_template_part( 'template-parts/content', 'page' ); 
 			}
 		endwhile; // End of the loop.
