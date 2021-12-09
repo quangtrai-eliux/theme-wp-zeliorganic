@@ -53,7 +53,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     background-position: center;
 }
 .product {
-	padding: 0;
 }
 .blog__sidebar__recent__item__pic {
     width: 100px;
@@ -85,7 +84,61 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     background: #7fad39;
     color: #ffffff;
 }
-
+.product .page-title {
+    display: none;
+}
+.product__pagination .page-numbers {
+    display: flex;
+    list-style: none;
+}
+.product__pagination .page-numbers li span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #7fad39;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: center;
+        margin-right: 16px;
+        -webkit-transition: all, 0.3s;
+        -moz-transition: all, 0.3s;
+        -ms-transition: all, 0.3s;
+        -o-transition: all, 0.3s;
+        transition: all, 0.3s;
+        background: #7fad39;
+        color: #ffffff;
+}
+.product__pagination .page-numbers li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.product__pagination a:last-child, .blog__pagination a:last-child {
+    margin-right: 16px;
+}
+.filter__sort {
+    margin-bottom: 15px;
+    display: flex;
+}
+.row-filter-product {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+}
+.filter__found h6 span {
+    color: #1c1c1c;
+    font-weight: 700;
+    margin-right: 0;
+}
+.nice-select.orderby {
+    z-index: 999;
+}
+.woocommerce ul.products.columns-3 {
+    margin: 0 15px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px)
 {
 	.header__menu ul li {
